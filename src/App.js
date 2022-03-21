@@ -29,14 +29,6 @@ class App extends Component {
                 <Route path="/contact" element={<Contact />}></Route>
               </Routes>
             </BrowserRouter>
-
-            {/*<Hero></Hero>*/}
-            {/*<WhoAmI></WhoAmI>*/}
-            {/*<Skills></Skills>*/}
-            {/*<Education></Education>*/}
-            {/*<Experience></Experience>*/}
-            {/*<Work></Work>*/}
-            {/*<Contact></Contact>*/}
           </div>
       	</div>
       </div>

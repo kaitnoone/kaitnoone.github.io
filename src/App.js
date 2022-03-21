@@ -18,7 +18,7 @@ class App extends Component {
         <div id="container-wrap">
           <Sidebar></Sidebar>
           <div id="colorlib-main">
-            <BrowserRouter basename={process.env.NODE_ENV === 'production' ? '/' : process.env.PUBLIC_URL_PROD}>
+            <BrowserRouter basename="/portfolio2022">
               <Routes>
                 <Route path="/" element={<Hero />}></Route>
                 <Route path="/about-me" element={<WhoAmI />}></Route>

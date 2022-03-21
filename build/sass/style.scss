@@ -144,6 +144,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	margin: 0 0 30px 0;
 }
+
 figure {
 	margin-bottom: 2.5em;
 	float: left;
@@ -184,7 +185,7 @@ figure {
 	padding-top: 3em;
 	padding-bottom: 40px;
 	float: left;
-
+	min-height: 100vh;
 	width: 300px;
 	position: fixed;
 	overflow-y: scroll;
@@ -342,6 +343,7 @@ figure {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+
 #colorlib-main {
 	width: calc(100% - 300px);
 	float: right;
@@ -354,19 +356,21 @@ figure {
 
 
 #colorlib-hero {
-	min-height: 500px;
 	background: $brand-white url(../images/loader.gif) no-repeat center center;
 	width: 100%;
 	float: left;
-	margin-bottom: 3em;
 	clear: both;
 
 	.hero {
 		background-size: contain;
 		background-position: right bottom;
 		background-repeat: no-repeat;
-		min-height: 400px;
+		min-height: 100vh;
 
+		@media screen and (min-width: $screen-sm-min) {
+			background-image: url("../images/Noone01x.jpg");
+		}
+		
 		.hero-text{
 			display: table;
 			opacity: 0;
@@ -379,6 +383,9 @@ figure {
 				padding: 2.5em;
 				position: relative;
 				.desc{
+					@media screen and (max-width: $screen-sm ) {
+						margin-top: 3em;
+					}
 				}
 				@media screen and (max-width: $screen-sm ) {
 					text-align: center;
@@ -406,7 +413,7 @@ figure {
 					font-family: $font-primary;
 					a{
 						color: rgba($brand-primary,.8);
-						border-bottom: 1px solid rgba($brand-primary,.7)
+						border-bottom: 1px solid rgba($brand-primary,.7);
 					}
 				}
 				.heading-section{
@@ -430,10 +437,12 @@ figure {
 					padding: 10px 15px !important;
 					border: none;
 					font-weight: 400;
+
 					&.btn-learn{
 						color: $brand-black;
 						border: 1px solid $brand-black;
 						background: transparent !important;
+
 						&:hover{
 							background: transparent !important;
 							border: 1px solid $brand-black !important;
@@ -445,55 +454,6 @@ figure {
 				}
 			}
 		}
-	}
-
-	.flexslider {
-		border: none;
-		z-index: 1;
-		margin-bottom: 0;
-
-		.slides {
-			position: relative;
-			overflow: visible;
-			li {
-				background-repeat: no-repeat;
-				background-size: cover;
-				background-position: bottom center;
-				min-height: 400px;
-				position: relative;
-			}
-		}
-		.flex-control-nav {
-			bottom: 20px;
-			z-index: 1000;
-			left: 20px;
-			float: left;
-			width: auto;
-			@media screen and(max-width: $screen-sm){
-				right: 20px;
-				top: 100px;
-			}
-			li {
-				display: block;
-				margin-bottom: 10px;
-				a {
-					background: rgba(0,0,0,.5);
-					box-shadow: none;
-					width: 12px;
-					height: 12px;
-					cursor: pointer;
-					&.flex-active {
-						cursor: pointer;
-						background: transparent;
-						border: 2px solid $brand-primary;
-					}
-				}
-			}
-		}
-		.flex-direction-nav {
-			display: none;
-		}
-		
 	}
 
 }
@@ -1241,26 +1201,6 @@ margin-left: -20px;
 			display: block;
 			position: relative;
 			height: 300px;
-			.icon{
-				position: absolute;
-				bottom: 20px;
-				left: 20px;
-				right: 20px;
-				span{
-					display: inline;
-					padding-right: 5px;
-					a{
-						color: lighten($brand-black,20%);
-						padding: 5px;
-						background: rgba(255,255,255,.5);
-						@include border-radius(4px);
-					}
-				}
-				i{
-					font-size: 16px;
-					color: lighten($brand-black,20%);
-				}
-			}
 		}
 		h3{
 			font-family: $font-primary;
@@ -1288,6 +1228,14 @@ margin-left: -20px;
 			a{
 				color: $brand-black;
 			}
+		}
+		.info {
+			color: rgba(255,255,255,.7);
+			font-size: 13px;
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			-webkit-transform: translate3d(0, 15px, 0);
+			transform: translate3d(0, 15px, 0);
 		}
 		@media screen and(max-width: $screen-sm){
 			opacity: 1;

@@ -4,7 +4,7 @@ export default class Hero extends Component {
     render() {
         return (
             <section id="colorlib-hero" className="js-fullheight" data-section="home">
-                <div className="hero" style={{ backgroundImage: 'url(images/Noone01x.jpg)' }}>
+                <div className="hero">
                     <div className="container-fluid">
                         <div className="row">
                             <div className="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight hero-text animated fadeInUp">

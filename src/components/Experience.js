@@ -6,7 +6,7 @@ export default class Experience extends Component {
             <section className="colorlib-experience" data-section="experience">
                 <div className="colorlib-narrow-content">
                     <div className="row">
-                        <div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+                        <div className="col-md-6 col-md-offset-3 col-md-pull-3 animate-box animated fadeInLeft" data-animate-effect="fadeInLeft">
                             <span className="heading-meta">Experience</span>
                             <h2 className="colorlib-heading animate-box">Work Experience</h2>
                         </div>
@@ -14,7 +14,7 @@ export default class Experience extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="timeline-centered">
-                                <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                <article className="timeline-entry animate-box animated fadeInLeft" data-animate-effect="fadeInLeft">
                                     <div className="timeline-entry-inner">
                                         <div className="timeline-icon color-1">
                                             <i className="icon-pen2" />
@@ -29,7 +29,7 @@ export default class Experience extends Component {
                                         </div>
                                     </div>
                                 </article>
-                                <article className="timeline-entry animate-box" data-animate-effect="fadeInRight">
+                                <article className="timeline-entry animate-box animated fadeInRight" data-animate-effect="fadeInRight">
                                     <div className="timeline-entry-inner">
                                         <div className="timeline-icon color-2">
                                             <i className="icon-pen2" />
@@ -43,7 +43,7 @@ export default class Experience extends Component {
                                         </div>
                                     </div>
                                 </article>
-                                <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                <article className="timeline-entry animate-box animated fadeInLeft" data-animate-effect="fadeInLeft">
                                     <div className="timeline-entry-inner">
                                         <div className="timeline-icon color-3">
                                             <i className="icon-pen2" />
@@ -61,7 +61,7 @@ export default class Experience extends Component {
                                         </div>
                                     </div>
                                 </article>
-                                <article className="timeline-entry animate-box" data-animate-effect="fadeInTop">
+                                <article className="timeline-entry animate-box animated fadeInTop" data-animate-effect="fadeInTop">
                                     <div className="timeline-entry-inner">
                                         <div className="timeline-icon color-4">
                                             <i className="icon-pen2" />
@@ -78,7 +78,7 @@ export default class Experience extends Component {
                                         </div>
                                     </div>
                                 </article>
-                                <article className="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+                                <article className="timeline-entry animate-box animated fadeInLeft" data-animate-effect="fadeInLeft">
                                     <div className="timeline-entry-inner">
                                         <div className="timeline-icon color-5">
                                             <i className="icon-pen2" />
@@ -93,7 +93,7 @@ export default class Experience extends Component {
                                         </div>
                                     </div>
                                 </article>
-                                <article className="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
+                                <article className="timeline-entry begin animate-box animated fadeInBottom" data-animate-effect="fadeInBottom">
                                     <div className="timeline-entry-inner">
                                         <div className="timeline-icon color-none">
                                         </div>

@@ -16,20 +16,20 @@ class App extends Component {
     return (
       <div id="colorlib-page">
         <div id="container-wrap">
-          <Sidebar></Sidebar>
-          <div id="colorlib-main">
-            <BrowserRouter basename="/portfolio2022">
-              <Routes>
-                <Route path="/" element={<Hero />}></Route>
-                <Route path="/about-me" element={<WhoAmI />}></Route>
-                <Route path="/skills" element={<Skills />}></Route>
-                <Route path="/education" element={<Education />}></Route>
-                <Route path="/experience" element={<Experience />}></Route>
-                <Route path="/work" element={<Work />}></Route>
-                <Route path="/contact" element={<Contact />}></Route>
-              </Routes>
-            </BrowserRouter>
-          </div>
+          <BrowserRouter>
+            <Sidebar></Sidebar>
+            <div id="colorlib-main">
+                <Routes>
+                  <Route path="/" element={<Hero />}></Route>
+                  <Route path="/about-me" element={<WhoAmI />}></Route>
+                  <Route path="/specialties" element={<Skills />}></Route>
+                  <Route path="/education" element={<Education />}></Route>
+                  <Route path="/experience" element={<Experience />}></Route>
+                  <Route path="/work" element={<Work />}></Route>
+                  <Route path="/contact" element={<Contact />}></Route>
+                </Routes>
+            </div>
+          </BrowserRouter>
       	</div>
       </div>
     );

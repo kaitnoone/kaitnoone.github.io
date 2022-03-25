@@ -253,6 +253,19 @@ figure {
 					padding: 10px 0;
 					font-family: $font-primary;
 					@include transition(.3s);
+					
+					&.active {
+						color: $brand-primary;
+						&:after {
+							visibility: visible;
+							-webkit-transform: scaleX(1);
+							-moz-transform: scaleX(1);
+							-ms-transform: scaleX(1);
+							-o-transform: scaleX(1);
+							transform: scaleX(1);
+						}
+					}
+
 					&:after {
 						content: "";
 						position: absolute;
@@ -277,19 +290,6 @@ figure {
 						text-decoration: none;
 						color: rgba(0,0,0,1);
 						
-						&:after {
-							visibility: visible;
-							-webkit-transform: scaleX(1);
-							-moz-transform: scaleX(1);
-							-ms-transform: scaleX(1);
-							-o-transform: scaleX(1);
-							transform: scaleX(1);
-						}
-					}
-				}
-				&.active {
-					a {
-						color: $brand-primary;
 						&:after {
 							visibility: visible;
 							-webkit-transform: scaleX(1);
@@ -1239,7 +1239,7 @@ margin-left: -20px;
 		}
 		@media screen and(max-width: $screen-sm){
 			opacity: 1;
-			background: rgba(0,0,0,.4);
+			// background: rgba(0,0,0,.4);
 			h3{
 				font-style: 28px;
 				-webkit-transform: translate3d(0, 0, 0);

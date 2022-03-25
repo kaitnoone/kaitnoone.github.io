@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default class Sidebar extends Component {
     constructor(props) {
@@ -21,6 +22,10 @@ export default class Sidebar extends Component {
         }
     }
 
+    closeMenu() {
+        document.body.classList.remove('offcanvas');
+    }
+
     render() {
         return (
             <div>
@@ -34,14 +39,14 @@ export default class Sidebar extends Component {
                     <nav id="colorlib-main-menu" role="navigation" className="navbar">
                         <div id="navbar" className="collapse">
                             <ul>
-                                <li className="active"><a href="/">Home</a></li>
-                                <li><a href="about-me">About</a></li>
-                                <li><a href="skills">Skills</a></li>
-                                <li><a href="education">Education</a></li>
-                                <li><a href="experience">Experience</a></li>
-                                <li><a href="work">Work</a></li>
-                                <li><a href="contact">Contact</a></li>
-                            </ul>
+                                <li><NavLink exact={true} activeClassName='active' onClick={this.closeMenu} to='/'>Home</NavLink></li>
+                                <li><NavLink activeClassName='active' onClick={this.closeMenu} to='/about-me'>About</NavLink></li>
+                                <li><NavLink activeClassName='active' onClick={this.closeMenu} to='/specialties'>Specialties</NavLink></li>
+                                <li><NavLink activeClassName='active' onClick={this.closeMenu} to='/education'>Education</NavLink></li>
+                                <li><NavLink activeClassName='active' onClick={this.closeMenu} to='/experience'>Experience</NavLink></li>
+                                <li><NavLink activeClassName='active' onClick={this.closeMenu} to='/work'>Work</NavLink></li>
+                                <li><NavLink activeClassName='active' onClick={this.closeMenu} to='/contact'>Contact</NavLink></li>
+                            </ul>                      
                         </div>
                     </nav>
                     <div className="colorlib-footer">

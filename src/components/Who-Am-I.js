@@ -10,9 +10,9 @@ export default class WhoAmI extends Component {
                             <div className="row row-bottom-padded-sm animate-box animated fadeInUp" data-animate-effect="fadeInLeft">
                                 <div className="col-md-12">
                                     <div className="about-desc">
-                                        <span className="heading-meta">About Us</span>
+                                        <span className="heading-meta">About Me</span>
                                         <h2 className="colorlib-heading">Who Am I?</h2>
-                                        <p><strong>Hi I'm Kaitlyn Noone.</strong> I'm a front-end web and software engineer.</p>
+                                        <p><strong>Hi, I'm Kaitlyn Noone!</strong> I'm a front-end web and software engineer.</p>
                                         <p>I'm currently located in Tulsa, OK and live with my two dogs and one cat. I run with a great group of young professionals brought to the city through 
                                             the <a href="https://tulsaremote.com/">Tulsa Remote</a> program. I'm passionate about remote work, health and wellness, and bringing gorgeous designs to life
                                             through accessible and clean code.

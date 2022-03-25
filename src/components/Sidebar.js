@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 
+// SETUP RESIZING LISTENER
 export default class Sidebar extends Component {
     constructor(props) {
         super(props);

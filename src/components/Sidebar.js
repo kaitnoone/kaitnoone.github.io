@@ -23,6 +23,7 @@ export default class Sidebar extends Component {
     }
 
     closeMenu() {
+        this.setState({visible: false});
         document.body.classList.remove('offcanvas');
     }
 

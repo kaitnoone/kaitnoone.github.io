@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Accordion from "./Accordion";
 
 export default class Education extends Component {
     constructor(props) {

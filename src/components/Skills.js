@@ -66,8 +66,8 @@ export default class Skills extends Component {
                             <div className="progress-wrap">
                                 <h3>Vue</h3>
                                 <div className="progress">
-                                    <div className="progress-bar color-6" role="progressbar" aria-valuenow={60} aria-valuemin={0} aria-valuemax={100} style={{ width: '60%' }}>
-                                        <span>60%</span>
+                                    <div className="progress-bar color-6" role="progressbar" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100} style={{ width: '75%' }}>
+                                        <span>75%</span>
                                     </div>
                                 </div>
                             </div>

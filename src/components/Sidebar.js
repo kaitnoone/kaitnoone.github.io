@@ -32,7 +32,7 @@ export default class Sidebar extends Component {
         return (
             <div>
                 <button onClick={this.toggleMenu} className={`js-colorlib-nav-toggle colorlib-nav-toggle ${this.state.visible ? "active" : ""}`} aria-expanded={this.state.visible} aria-controls="navbar"><i></i></button>
-                <aside id="colorlib-aside" role="complementary" className="border js-fullheight">
+                <aside id="colorlib-aside" className="border js-fullheight">
                     <div className="text-center">
                         <div className="author-img" style={{ backgroundImage: 'url(images/kaitlyn-avatar.png)' }} />
                         <h1 id="colorlib-logo"><a href="index.html">Kaitlyn Noone</a></h1>

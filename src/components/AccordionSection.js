@@ -24,8 +24,8 @@ class AccordionSection extends React.Component {
                 <div onClick={onClick} style={{ cursor: 'pointer' }}>
                     <div class="panel-heading" role="tab">
                         <h4 class="panel-title">
-                            <a className={isOpen ? "" : "collapsed"} aria-expanded={isOpen}>{label}
-                            </a>
+                            <div className={isOpen ? "" : "collapsed"} aria-expanded={isOpen}>{label}
+                            </div>
                         </h4>
                     </div>
                 </div>

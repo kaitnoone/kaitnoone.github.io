@@ -32,16 +32,13 @@ export default class Education extends Component {
                         </div>
                     </div>
                     <div className="animate-box animated fadeInRight">
-                        <Accordion>
-                            <div label='Multimedia - B.S.'>
-                                <p><strong>University of Nebraska at Kearney</strong><br />
-                                    2006 - 2009</p>
-                                <p>
-                                    Summa Cum Laude and Honors Program graduate. Multimedia course of study is a
-                                    hybrid of journalism, graphic design and computer science. Minor in advertising.
-                                </p>
-                            </div>
-                        </Accordion>
+                        <h2 className="h4">Multimedia - B.S.</h2>
+                        <p><strong>University of Nebraska at Kearney</strong><br />
+                            2006 - 2009</p>
+                        <p>
+                            Summa Cum Laude and Honors Program graduate. Multimedia course of study is a
+                            hybrid of journalism, graphic design and computer science. Minor in advertising.
+                        </p>
                     </div>
                 </div>
             </section>

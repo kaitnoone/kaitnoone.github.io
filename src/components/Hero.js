@@ -11,7 +11,7 @@ export default class Hero extends Component {
                                 <div className="hero-text-inner js-fullheight">
                                     <div className="desc">
                                         <h1>Hi! <br />I'm Kaitlyn.</h1>
-                                        <p><a className="btn btn-primary btn-learn" target="_blank" href="documents/resume.pdf">Download Resume <i className="icon-download4" /></a></p>
+                                        <p><a className="btn btn-primary btn-learn" target="_blank" href="documents/kaitlyn_noone_resume.pdf">Download Resume <i className="icon-download4" /></a></p>
                                     </div>
                                 </div>
                             </div>
